@@ -10,12 +10,12 @@ body {
   width: 100vw;
   background-image: url('../assets/wallpaper.jpg');
   background-size: cover;
+  font-family: 'Montserrat';
 }
 header {
   text-align: center;
   padding: 25pt;
-  background: linear-gradient(60deg, #FE1B75, #FF5570, #ffce35, #FEAF80);
-  font-family: 'Montserrat';
+  background: linear-gradient(60deg, #fe1b75, #ff5570, #ffce35, #feaf80);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -26,4 +26,36 @@ header {
   font-size: 12pt;
   font-weight: 300;
   text-transform: uppercase;
+} /*
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+#menu table {
+  font-size: 25pt;
+  background: rgba(0, 0, 0, 0.7);
+  color: #09FEDF;
+  padding: 5pt;
+}
+#menu table tr td {
+  width: 33vw;
+  height: 33vw;
+  text-align: center
+}*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 20pt;
+  background: #111;
+  color: #eee;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

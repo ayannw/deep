@@ -1,4 +1,4 @@
-import Vue from '../node_modules/vue/dist/vue.esm.browser.min.js';
+import Vue from '../node_modules/vue/dist/vue.esm.browser.min.js'
 
 const clock = new Vue({
   el: '#clock',
@@ -9,11 +9,11 @@ const clock = new Vue({
 })!
 
 const zeroPadding = (num: number, digit: number): string => {
-  let zero: string = '';
+  let zero: string = ''
   for (let i = 0; i < digit; i++) {
-    zero += '0';
+    zero += '0'
   }
-  return (zero + num).slice(-digit);
+  return (zero + num).slice(-digit)
 }
 
 const updateTime = (): void => {
@@ -29,11 +29,24 @@ const updateTime = (): void => {
     ', ' +
     months[cd.getMonth()] +
     ' ' +
-    zeroPadding(cd.getDate(), 2);
+    zeroPadding(cd.getDate(), 2)
 }
 
-const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']!
+const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+]!
 
-const timerID = setInterval(updateTime, 1000);
-updateTime();
+const timerID = setInterval(updateTime, 1000)
+updateTime()
