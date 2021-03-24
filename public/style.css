@@ -5,29 +5,25 @@
   padding: 0;
   outline: 0;
 }
-
 body {
-  background: #111;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../assets/wallpaper.jpg');
+  background-size: cover;
 }
 header {
   text-align: center;
   padding: 25pt;
-  background: linear-gradient(
-    150deg,
-    #40ffe6,
-    #3cffe4,
-    #33ffdf,
-    #27ffd6,
-    #1effca,
-    #23ffba,
-    #32ffa9,
-    #44ff96,
-    #55ff83,
-    #62ff74,
-    #6bff68,
-    #6eff64
-  );
-  font-family: 'Josefin Sans';
+  background: linear-gradient(60deg, #FE1B75, #FF5570, #ffce35, #FEAF80);
+  font-family: 'Montserrat';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.time {
+  padding: 7.5pt;
+}
+.date {
+  font-size: 12pt;
+  font-weight: 300;
+  text-transform: uppercase;
 }

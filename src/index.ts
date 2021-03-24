@@ -8,7 +8,7 @@ const clock = new Vue({
   },
 })!
 
-const zeroPadding = (num: number, digit: number) => {
+const zeroPadding = (num: number, digit: number): string => {
   let zero: string = '';
   for (let i = 0; i < digit; i++) {
     zero += '0';
@@ -16,8 +16,8 @@ const zeroPadding = (num: number, digit: number) => {
   return (zero + num).slice(-digit);
 }
 
-const updateTime = () => {
-  const cd = new Date()
+const updateTime = (): void => {
+  const cd = new Date()!
   clock.time =
     zeroPadding(cd.getHours(), 2) +
     ':' +
@@ -25,15 +25,15 @@ const updateTime = () => {
     ':' +
     zeroPadding(cd.getSeconds(), 2)
   clock.date =
-    zeroPadding(cd.getFullYear(), 4) +
-    '-' +
-    zeroPadding(cd.getMonth() + 1, 2) +
-    '-' +
-    zeroPadding(cd.getDate(), 2) +
+    weekDays[cd.getDay()] +
+    ', ' +
+    months[cd.getMonth()] +
     ' ' +
-    week[cd.getDay()];
+    zeroPadding(cd.getDate(), 2);
 }
 
-const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']!
+
 const timerID = setInterval(updateTime, 1000);
 updateTime();
