@@ -1,0 +1,33 @@
+@import '../assets/fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background: #111;
+}
+header {
+  text-align: center;
+  padding: 25pt;
+  background: linear-gradient(
+    150deg,
+    #40ffe6,
+    #3cffe4,
+    #33ffdf,
+    #27ffd6,
+    #1effca,
+    #23ffba,
+    #32ffa9,
+    #44ff96,
+    #55ff83,
+    #62ff74,
+    #6bff68,
+    #6eff64
+  );
+  font-family: 'Josefin Sans';
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

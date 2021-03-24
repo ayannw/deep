@@ -9,12 +9,18 @@
     <link
       rel="stylesheet"
       href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-      type="text/css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <p id="body">{{urmom}}</p>
+    <header>
+      <div id="clock">
+        <h1 class="date">{{ date }}</h1>
+        <h1 class="">{{ time }}</h1>
+      </div>
+      <div class="message"></div>
+    </header>
 
     <script type="module" src="../dist/index.js"></script>
   </body>
