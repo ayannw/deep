@@ -1,0 +1,19 @@
+{
+  "name": "deep",
+  "version": "1.0.1",
+  "description": "A minimalistic Android launcher design",
+  "repository": "https://github.com/ayannw/deep.git",
+  "author": "ayannw <ayanispro420@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc -b src",
+    "pretty": "prettier . -w",
+    "watch": "tsc -b src -W"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "vue": "^2.6.12"
+  }
+}
