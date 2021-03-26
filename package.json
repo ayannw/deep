@@ -7,9 +7,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc -b src",
+    "build": "yarn build:js && yarn build:css",
     "pretty": "prettier . -w",
-    "watch": "tsc -b src -W"
+    "watch:js": "tsc -b src -W",
+    "build:js": "tsc -b src",
+    "build:css": "sass styles:public/styles",
+    "watch:css": "sass --watch styles:public/styles"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
