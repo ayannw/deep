@@ -8,6 +8,7 @@ Desktop environment like web design. Made with SASS and Vue.
 
 ![](https://github-size-badge.herokuapp.com/ayannw/deep.svg)
 ![](https://tokei.rs/b1/github.com/ayannw/deep)
+![](https://github.com/ayannw/deep/actions/workflows/node.js.yml/badge.svg)
 
 ## Local setup
 
