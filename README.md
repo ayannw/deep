@@ -1,6 +1,6 @@
 # Deep
 
-I was bored so decided to make a cool android launcher-like interface with HTML, CSS & JS.
+Desktop environment like thingy made with web technologies.
 
 ## Preview
 
